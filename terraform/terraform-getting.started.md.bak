@@ -28,7 +28,21 @@ Install docker before configuring Terraform.
 
 Terraform supports Linux, Mac, Windows, and Unix platforms.  [Download](https://www.terraform.io/downloads) and [install](https://learn.hashicorp.com/tutorials/terraform/install-cli) on Terraform.
 
+
+
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Linux/Unix"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+[Linux/Unix](#heading=h.85s5g7dyd6xj)
+
+
+
+<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: undefined internal link (link text: "Windows"). Did you generate a TOC? </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+[Windows](#heading=h.nh8f0vyygshf)
+
+
 ### Linux
+
 
 ### Create a Terraform Configuration
 
@@ -109,6 +123,14 @@ $ docker ps -a
 
 Output:
 
+
+
+<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image1.png "image_tooltip")
+
+
 Access the Nginx Web Server on Localhost on TCP port 80.
 
 Linux command:
@@ -120,6 +142,15 @@ $ curl localhost:80
 
 
 Output:
+
+
+
+<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image2.png "image_tooltip")
+
+
 
 #### Removing Resources
 
