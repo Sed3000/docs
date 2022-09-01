@@ -82,7 +82,7 @@ Verify the docker container is running.
 ```shell
 $ docker ps -a
 ```
-<image title="Docker Process Check" alt="Docker Process Check" src="images/docker-ps-output.jpg"
+<image title="Docker Process Check" alt="Docker Process Check" src="images/docker-ps-output.jpg">
 
 
 Verify the webserver is accessible.
