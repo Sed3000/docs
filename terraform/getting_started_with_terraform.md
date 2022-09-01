@@ -72,7 +72,7 @@ $ terraform init
 ```
 
 
-Provision the NGINX webserver with _terraform apply_.  Enter _yes_ , then press _ENTER_ when prompted.
+Provision the NGINX webserver with ***_terraform apply_***.  Enter ***_yes_ ***, then press ***_ENTER_ ***when prompted.
 
 ```shell
 $ terraform apply
@@ -93,12 +93,12 @@ $ curl localhost:80
 
 ## Remove Infrastructure Resources
 
-To remove the container type _terraform destroy_ .
+To remove the container type ***_terraform destroy_*** .
 
 ```shell
 $ terraform destroy
 ```
 
-To complete the removal, type _yes_ and press _ENTER_. Terraform will destroy the resources it had created earlier.
+To complete the removal, type ***_yes_*** and press ***_ENTER_***. Terraform will destroy the resources it had created earlier.
 
 You have now depolyed and destroyed webserver with Terraform.
