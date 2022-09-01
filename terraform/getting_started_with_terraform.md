@@ -39,7 +39,7 @@ provider "docker" {
 }
 
 # Create a docker container resource
-# -> same as 'docker run --name nginx -p8080:80 -d nginx:latest'
+# -> same as 'docker run --name training -p80:80 -d nginx:latest'
 
   name  = "training"
   ports {
@@ -50,6 +50,7 @@ provider "docker" {
 
 # Create a docker image resource
 # -> docker pull nginx:latest
+
 resource "docker_container" "nginx" {
   image = docker_image.nginx.repo_digest
 
@@ -58,20 +59,37 @@ resource "docker_image" "nginx" {
 }
 ```
 
+## Initialize Terraform
 Initialize Terraform with the `init` command. The AWS provider will be installed. 
 
 ```shell
 $ terraform init
 ```
 
+## Provision Resources
 You shoud check for any errors. If it ran successfully, provision the resource with the `apply` command.
 
+### Deployment
 ```shell
 $ terraform apply
 ```
 
+### Verify Deployment
+
+Verify the docker container is running.
+```shell
+$ docker ps -a
+```
+
+Verify the webserver is accessible.
+```shell 
+$ curll localhost:80
+```
+
+
 The command will take up to a few minutes to run and will display a message indicating that the resource was created.
 
+## Removing Resources
 Finally, destroy the infrastructure.
 
 ```shell
@@ -79,3 +97,5 @@ $ terraform destroy
 ```
 
 Look for a message are the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
+
+## Conculsion 
