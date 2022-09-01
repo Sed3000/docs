@@ -89,7 +89,7 @@ Verify the webserver is accessible.
 ```shell 
 $ curl localhost:80
 ```
-
+<image title="Curl Webserver" alt="Curl Webserver" src="images/lnx-curl-localhost.jpg">
 
 ## Remove Infrastructure Resources
 
