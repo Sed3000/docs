@@ -2,19 +2,24 @@
 
 Terraform is an [infrastructure as code (IaC)](https://www.terraform.io/docs/glossary#infrastructure-as-code) tool that allows you to build, change, and version infrastructure safely and efficiently. 
 
-## Prerequisites
+## Requirements
  
  - [Docker](https://www.docker.com/)
  - [Terraform](https://www.terraform.io/downloads.html) 
  
-## Create a configuration file.
+## Create a configuration file
 you will create a file named main.tf  This file contains the configuration of the resources to deploy a Ngnix docker container.  
 
-We recommend crreating a directory for your configuration file.
+Create a directory named _terraform-demo_.
+
 ```shell
 $ mkdir terraform-demo
+```
+Then, go to this directory.
+```shell
 $ cd terraform-demo
 ```
+
 
 Next, create a file for your Terraform configuration code.
 
@@ -22,7 +27,7 @@ Next, create a file for your Terraform configuration code.
 $ touch main.tf
 ```
 
-Paste the following lines into the file.
+Paste the following Terraform configuration into the file.
 
 ```hcl
 terraform {
@@ -59,43 +64,40 @@ resource "docker_image" "nginx" {
 }
 ```
 
-## Initialize Terraform
-Initialize Terraform with the `init` command. The AWS provider will be installed. 
+Initialize Terraform, which downloads a plugin that allows the project to run Docker. 
 
 ```shell
 $ terraform init
 ```
 
-## Provision Resources
-You shoud check for any errors. If it ran successfully, provision the resource with the `apply` command.
 
-### Deployment
+Provision the NGINX webserver with _terraform apply_.  Enter _yes_ , then press _ENTER_ when prompted.
+
 ```shell
 $ terraform apply
 ```
 
-### Verify Deployment
-
-Verify the docker container is running.
+Verify the docker container is running. 
 ```shell
 $ docker ps -a
 ```
 
+
+
 Verify the webserver is accessible.
 ```shell 
-$ curll localhost:80
+$ curl localhost:80
 ```
 
 
-The command will take up to a few minutes to run and will display a message indicating that the resource was created.
 
-## Removing Resources
-Finally, destroy the infrastructure.
+
+To remove the container type _terraform destroy_ .
 
 ```shell
 $ terraform destroy
 ```
 
-Look for a message are the bottom of the output asking for confirmation. Type `yes` and hit ENTER. Terraform will destroy the resources it had created earlier.
+To complete the removal, type _yes_ and press _ENTER_. Terraform will destroy the resources it had created earlier.
 
-## Conculsion 
+You have now depolyed and destroyed webserver with Terraform.
