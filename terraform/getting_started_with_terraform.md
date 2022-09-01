@@ -72,7 +72,7 @@ $ terraform init
 ```
 
 
-Provision the NGINX webserver with ***_terraform apply_***.  Enter ***_yes_ ***, then press ***_ENTER_ ***when prompted.
+Provision the NGINX webserver with ***_terraform apply_***.  Enter ***_yes_***, then press ***_ENTER_ *** when prompted.
 
 ```shell
 $ terraform apply
