@@ -7,7 +7,7 @@ Terraform is an [infrastructure as code (IaC)](https://www.terraform.io/docs/glo
  - [Docker](https://www.docker.com/)
  - [Terraform](https://www.terraform.io/downloads.html) 
  
-## Create infrastructure resources
+## Create Infrastructure Resources
 you will create a file named main.tf  This file contains the configuration of the resources to deploy a Ngnix docker container.  
 
 Create a directory named _terraform-demo_.
@@ -64,7 +64,7 @@ resource "docker_image" "nginx" {
 }
 ```
 
-## Deploy infrastucture resources
+## Deploy Infrastructure Resources
 Initialize Terraform, which downloads a plugin that allows the project to run Docker. 
 
 ```shell
@@ -91,7 +91,7 @@ $ curl localhost:80
 ```
 
 
-##Remove infrastucture resources
+## Remove Infrastructure Resources
 
 To remove the container type _terraform destroy_ .
 
