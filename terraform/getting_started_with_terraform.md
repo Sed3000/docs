@@ -73,7 +73,9 @@ This command downloads a plugin that lets the project run Docker.
 ```shell
 $ terraform init
 ```
-Terraform has successfully initialized
+
+	Terraform has successfully initialized
+
 <image>
 
 2. Deploy the NGINX webserver with ***_terraform apply_***.  
@@ -81,8 +83,11 @@ Terraform has successfully initialized
 $ terraform apply
 ```
 <image>
+
 3. Type ***_yes_*** when prompted, press ***_ENTER_***.
+
 <image>
+
 Terraform has successfully provisioned resources.
 
 4. Type the following command to cconfirm the docker container is running. 
@@ -113,6 +118,6 @@ Terraform will destroy the resources previously created.
 
 Congratulations, You have deployed a Webserver using Docker and Ngnix with Terraform.
 
-Resources
+## Resources
 
 <other links>
