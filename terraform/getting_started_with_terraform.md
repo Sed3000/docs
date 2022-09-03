@@ -76,17 +76,17 @@ $ terraform init
 
 	Terraform has successfully initialized
 
-<image title="terraform init" alt="terraform init command" src="images/terraform-init.jpg">
+	<image title="terraform init" alt="terraform init command" src="images/terraform-init.jpg">
 
 2. Deploy the NGINX webserver with ***_terraform apply_***.  
 ```shell
 $ terraform apply
 ```
-<image title="terraform apply" alt="terraform apply command" src="images/terraform-apply.jpg">
+	<image title="terraform apply" alt="terraform apply command" src="images/terraform-apply.jpg">
 
 3. Type ***_yes_*** when prompted, press ***_ENTER_***.
 
-<image title="terraform apply completed" alt="terraform apply command results" src="images/terraform-apply-complete.jpg">
+	<image title="terraform apply completed" alt="terraform apply command results" src="images/terraform-apply-complete.jpg">
 
 	Terraform has successfully provisioned resources.
 
@@ -94,28 +94,27 @@ $ terraform apply
 ```shell
 $ docker ps
 ```
-<image title="Docker Process Check" alt="Docker Process Check" src="images/docker-ps-output.jpg">
+	<image title="Docker Process Check" alt="Docker Process Check" src="images/docker-ps-output.jpg">
 
 
 5. Type the following command to confirm the webserver is running.
 ```shell 
 $ curl localhost:80
 ```
-<image title="Curl Webserver" alt="Curl Webserver" src="images/lnx-curl-localhost.jpg">
+	<image title="Curl Webserver" alt="Curl Webserver" src="images/lnx-curl-localhost.jpg">
 
 
 ## Remove Infrastructure Resources
 
 1. Type ***_terraform destroy_***  to remove resources.
-
 ```shell
 $ terraform destroy
 ```
-<image title="terraform delete" alt="terraform delete command" src="images/terraform-delete.jpg">
+	<image title="terraform delete" alt="terraform delete command" src="images/terraform-delete.jpg">
 
 2. Type ***_yes_*** , when prompted, press ***_ENTER_***. 
 Terraform will destroy the resources previously created.
-<image title="terraform delete completed" alt="terraform delete command results" src="images/terraform-delete-complete.jpg">
+	<image title="terraform delete completed" alt="terraform delete command results" src="images/terraform-delete-complete.jpg">
 
 **Congratulations, You have deployed a Webserver using Docker and Ngnix with Terraform.**
 
