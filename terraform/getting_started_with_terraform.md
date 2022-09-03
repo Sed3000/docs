@@ -124,6 +124,6 @@ Terraform will destroy the resources previously created.
 
 [Want more tutorials?](https://learn.hashicorp.com/terraform?utm_source=terraform_io)
 
-[More about terraform]([Terraform](https://www.terraform.io) 
+[More about terraform](https://www.terraform.io) 
 
 [Docker](https://www.docker.com/)
