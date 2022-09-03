@@ -76,19 +76,19 @@ $ terraform init
 
 	Terraform has successfully initialized
 
-<image>
+<image title="terraform init" alt="terraform init command" src="images/terraform-init.jpg">
 
 2. Deploy the NGINX webserver with ***_terraform apply_***.  
 ```shell
 $ terraform apply
 ```
-<image>
+<image title="terraform apply" alt="terraform apply command" src="images/terraform-apply.jpg">
 
 3. Type ***_yes_*** when prompted, press ***_ENTER_***.
 
-<image>
+<image title="terraform apply completed" alt="terraform apply command results" src="images/terraform-apply-complete.jpg">
 
-Terraform has successfully provisioned resources.
+	Terraform has successfully provisioned resources.
 
 4. Type the following command to cconfirm the docker container is running. 
 ```shell
@@ -111,12 +111,13 @@ $ curl localhost:80
 ```shell
 $ terraform destroy
 ```
+<image title="terraform delete" alt="terraform delete command" src="images/terraform-delete.jpg">
 
 2. Type ***_yes_*** , when prompted, press ***_ENTER_***. 
 Terraform will destroy the resources previously created.
-<image>
+<image title="terraform delete completed" alt="terraform delete command results" src="images/terraform-delete-complete.jpg">
 
-Congratulations, You have deployed a Webserver using Docker and Ngnix with Terraform.
+**Congratulations, You have deployed a Webserver using Docker and Ngnix with Terraform.**
 
 ## Resources
 
