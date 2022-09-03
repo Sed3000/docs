@@ -76,12 +76,13 @@ $ terraform init
 
 	Terraform has successfully initialized
 
-	<image title="terraform init" alt="terraform init command" src="images/terraform-init.jpg">
+<image title="terraform init" alt="terraform init command" src="images/terraform-init.jpg">
 
 2. Deploy the NGINX webserver with ***_terraform apply_***.  
 ```shell
 $ terraform apply
 ```
+
 	<image title="terraform apply" alt="terraform apply command" src="images/terraform-apply.jpg">
 
 3. Type ***_yes_*** when prompted, press ***_ENTER_***.
