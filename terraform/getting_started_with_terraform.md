@@ -91,7 +91,7 @@ $ terraform apply
 
 	Terraform has successfully provisioned resources.
 
-4. Type the following command to cconfirm the docker container is running. 
+4. Type the following command to confirm the docker container is running. 
 ```shell
 $ docker ps
 ```
