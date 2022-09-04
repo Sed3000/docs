@@ -85,7 +85,7 @@ $ terraform apply
 
 <image title="terraform apply" alt="terraform apply command" src="images/terraform-apply.jpg">
 
-3. Type ***_yes_*** when prompted, press ***_ENTER_***.
+3. Type ***_yes_*** when prompted, then press ***_ENTER_***.
 
 <image title="terraform apply completed" alt="terraform apply command results" src="images/terraform-apply-complete.jpg">
 
@@ -113,7 +113,7 @@ $ terraform destroy
 ```
 <image title="terraform delete" alt="terraform delete command" src="images/terraform-delete.jpg">
 
-2. Type ***_yes_*** , when prompted, press ***_ENTER_***. 
+2. Type ***_yes_*** when prompted then press ***_ENTER_***. 
 Terraform will destroy the resources previously created.
 
 <image title="terraform delete completed" alt="terraform delete command results" src="images/terraform-delete-complete.jpg">
